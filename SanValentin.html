@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu Página de San Valentín</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    h1 {
+      color: #d9534f;
+    }
+
+    p {
+      color: #333;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+
+    button {
+      background-color: #5bc0de;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+    /* Estilos de la ventana modal */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    .modal-content {
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .modal-close {
+      background-color: #d9534f;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+    .modal-button {
+      background-color: #5cb85c;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>¡Feliz Día de San Valentín!</h1>
+  <p>¡Bienvenido a nuestra página especial para celebrar el amor!</p>
+  <!-- Reemplaza la URL actual con la nueva URL de la imagen -->
+  <img src="https://static.vecteezy.com/system/resources/previews/001/994/693/original/cute-valentine-cat-couple-with-heart-love-happy-valentine-s-day-cute-cat-cartoon-outline-pink-heart-for-banner-printable-stuff-greeting-card-vector.jpg" alt="Imagen de San Valentín">
+
+  <button onclick="mostrarModal()">Presiona aquí</button>
+
+  <!-- Ventana modal -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span onclick="cerrarModal()" class="modal-close">&times;</span>
+      <p>
+        Cuando te vi, agradezco al mundo de haberte conocido y haberme mostrado una primavera tan brillante como la tuya, mi amor bello. Sabes, no solo quiero una vida contigo, quiero tener todo contigo, hasta que la muerte nos separe. Estoy tan agradecido y rendido a ti, mi vida, que no querría darte, que no querría mostrarte, y sobre todo, yo a ti rendirme y entregarme. Porque yo me he realmente enamorado. Te daré mi futuro, también mi corazón y todo mi ser. Estaremos juntos para siempre, de verdad. Te amo, Rena, ¿partimos juntos? ❤️
+      </p>
+      <button class="modal-button" onclick="irAYoutube()">Ver mensaje especial en YouTube</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  function mostrarModal() {
+    var modal = document.getElementById('myModal');
+    modal.style.display = 'block';
+  }
+
+  function cerrarModal() {
+    var modal = document.getElementById('myModal');
+    modal.style.display = 'none';
+  }
+
+  function irAYoutube() {
+    window.location.href = 'https://www.youtube.com/watch?v=VF-r5TtlT9w&pp=ygULXCBBZG9yZSBZb3U%3D';
+  }
+</script>
+
+</body>
+</html>
